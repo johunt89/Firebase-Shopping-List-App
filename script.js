@@ -37,13 +37,14 @@ onValue(itemsInDB, function(snapshot){
 
 addButton.addEventListener("click", function(){
     if(inputField.value != ""){
+        error.innerHTML = ""
         let inputValue = inputField.value;
         push(itemsInDB, inputValue)
         clearInput();
     }
     else
     {
-        inputField.value = "Type the item here."
+        error.innerHTML = "Please enter item for list in box above"
     }
     
     
