@@ -36,9 +36,18 @@ onValue(itemsInDB, function(snapshot){
 })
 
 addButton.addEventListener("click", function(){
-    let inputValue = inputField.value;
-    push(itemsInDB, inputValue)
-    clearInput();
+    if(inputField.value != ""){
+        let inputValue = inputField.value;
+        push(itemsInDB, inputValue)
+        clearInput();
+    }
+    else
+    {
+        inputField.value = "Type the item here."
+    }
+    
+    
+    
 })
 
 //functions

@@ -2,7 +2,7 @@ html, body{
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
+    background-color: #cad2c5;
 }
 
 input{
@@ -19,8 +19,8 @@ input{
 }
 
 button{
-    color: #FDFDFD;
-    background-color: #AC485A;
+    color: #cad2c5;
+    background-color: #2f3e46;
     border: 0;
     padding: 15px;
     border-radius: 8px;
@@ -58,7 +58,7 @@ ul{
 }
 
 ul li{
-    background-color: #fffdf8;
+    background-color: #84a98c;
     border-radius: 8px;
     box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
     flex-grow: 1;
