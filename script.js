@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 
 const appSettings = {
@@ -8,14 +8,15 @@ const appSettings = {
 
 const app = initializeApp(appSettings);
 const database = getDatabase(app);
-
-console.log(app);
-console.log(database);
+const itemsInDB = ref(database, "items")
 
 const inputField = document.getElementById("input-field");
 const addButton = document.getElementById("add-button");
 
-function addToCart() {
+addButton.addEventListener("click", function(){
     let inputValue = inputField.value;
-    console.log(inputValue);
-  }
+
+    push(itemsInDB, inputValue)
+
+    console.log(`${inputValue} added to database`)
+})
