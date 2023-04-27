@@ -29,11 +29,17 @@ button{
     font-family: 'Rubik', sans-serif;
 }
 
+button:hover{
+    background-color: #432000;
+    cursor: pointer;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     max-width: 320px;
     margin: 30px auto;
+    user-select: none;
 }
 
 img{
@@ -59,4 +65,10 @@ ul li{
     font-size: 20px;
     padding: 15px;
     text-align: center;
+    
+}
+
+ul li:hover{
+    background: #FFECC7;
+    cursor: pointer;
 }
