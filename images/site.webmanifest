@@ -1,12 +1,19 @@
 {
-    "name":"Shopping List",
-    "short_name":"Shopping List",
+    "name":"",
+    "short_name":"",
     "icons":
         [
-            {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
-            {"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+            {
+                "src":"/android-chrome-192x192.png",
+                "sizes":"192x192","type":"image/png"
+            },
+            {
+                "src":"/android-chrome-512x512.png",
+                "sizes":"512x512",
+                "type":"image/png"
+            }
         ],
-    "theme_color":"#EEf0f4",
-    "background_color":"#EEf0f4",
+    "theme_color":"#cad2c5",
+    "background_color":"#cad2c5",
     "display":"standalone"
 }
